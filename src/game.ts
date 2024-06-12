@@ -5,7 +5,7 @@ import { checkCollisionWithBullets } from "./collisionwithbullets";
 import { gameOver } from './screens';
 
 const mainAudio = new Audio(); //For playing the sound of the car engine
-mainAudio.src = '../assets/audio/carenginegoing.wav';
+mainAudio.src = './assets/audio/carenginegoing.wav';
 mainAudio.loop=true
 
 //Initializing all the necessary variable
@@ -92,7 +92,7 @@ function loadCarImage(): void {
     playerImage.onload = () => {
         animationFrameId = requestAnimationFrame(gameLoop);
     };
-    playerImage.src = '../assets/images/cars.webp';
+    playerImage.src = './assets/images/cars.webp';
 }
 
 
@@ -119,7 +119,7 @@ function gameLoop(timestamp: number): void {
         cancelAnimationFrame(animationFrameId)
         mainAudio.pause()
         const audio = new Audio();
-        audio.src = '../assets/audio/collidewithcar.wav';
+        audio.src = './assets/audio/collidewithcar.wav';
         audio.play()
         setTimeout(gameOver,2000)
         

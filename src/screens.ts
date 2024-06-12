@@ -6,7 +6,7 @@ const gameControls = document.getElementById('gameControls') as HTMLElement;
 
 
 const introAudio = new Audio();  //Playing sound during initial game render
-introAudio.src = '../assets/audio/introsong.mp3';
+introAudio.src = './assets/audio/introsong.mp3';
 introAudio.loop=true
 
 
