@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <title>Simple Car Game</title>
+</head>
+<body>
+   
+    <div id="homeScreen" class="homeScreen">
+        <h1>CAR RACE</h1>
+        <h2>Left and Right arrow keys for movement</h2>
+        <h2>Space bar for throwing bullets</h2>
+        <button id="startButton" class="landing-page">Start Game</button>
+        <button id="gameControls" class="landing-page control-button">See Controls</button>
+    </div>
+    <div id="gameScreen" class="game-screen">
+       
+        <canvas id="gameCanvas" width="800" height="600" class="canvas"></canvas>
+    </div>
+    <div id="gameOverScreen" class="gameOverScreen">
+        <h1>Game Over</h1>
+        <button id="restartButton" class="game-over-button">Restart Game</button>
+        <button id="backToHomePage" class="game-over-button">Back To Home</button>
+    </div>
+   
+    <script src="./src/main.ts" type="module"></script>
+</body>
+</html>
