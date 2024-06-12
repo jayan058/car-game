@@ -1,3 +1,4 @@
+import './style.css'
 import { showHome, showGameScreen, showGameControls } from './screens.ts';
 import { startGame } from './game.ts';
 import { initInputHandlers } from './input.ts';
